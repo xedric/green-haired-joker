@@ -7,59 +7,90 @@ const sellProduct = require('./sellproduct');
 describe('sell product', () => {
 
 	test('Is product an object', () => {
-		expect(sellProduct("test")).toThrowError();
-		expect(sellProduct({})).toThrowError(TypeError);
+
+		function sendString() {
+			return sellProduct("test");
+		}
+		expect(sendString()).toThrowError();
+
+		function sendEmptyObj() {
+			return sellProduct({});
+		}
+		expect(sendEmptyObj()).toThrowError(TypeError);
 	});
 
 	test('One properties missing, two correct property', () => {
 
-		expect(sellProduct(
+		function missingCount() {
+			return sellProduct(
 			{
 				name: "",
 				price: 0
-			})).toThrowError(TypeError);
+			})
+		}
+		expect(missingCount()).toThrowError(TypeError);
 
-		expect(sellProduct(
+		function missingPrice() {
+			return sellProduct(
 			{
 				name: "",
 				count: 0
-			})).toThrowError(TypeError);
+			})
+		}
+		expect(missingPrice()).toThrowError(TypeError);
 
-		expect(sellProduct(
+		function missingName() {
+			return sellProduct(
 			{
 				price: 0,
 				count: 0
-			})).toThrowError(TypeError);
+			})
+		}
+		expect(missingName()).toThrowError(TypeError);
 
 	});
 
 	test('Two properties missing, one correct property', () => {
 
-		expect(sellProduct(
+		function onlyName() {
+			return sellProduct(
 			{
 				name: ""
-			})).toThrowError(TypeError);
+			})
+		}
 
-		expect(sellProduct(
+		expect(onlyName()).toThrowError(TypeError);
+
+		function onyPrice() {
+			return sellProduct(
 			{
 				price: 0
-			})).toThrowError(TypeError);
+			})
+		}
+		expect(onyPrice()).toThrowError(TypeError);
 
-		expect(sellProduct(
+		function onyCount() {
+			return sellProduct(
 			{
 				count: 0
-			})).toThrowError(TypeError);
+			})
+		}
+		expect(onyCount()).toThrowError(TypeError);
 
 	});
 
-	test.only('Is product a correctly formatted object', () => {
+	test('Is product a correctly formatted object', () => {
 
-		/*expect(sellProduct(
+		function sellProductError() {
+			return sellProduct(
 			{
 				name: "",
 				price: 0,
 				count: 0
-			})).toThrowError("Object properties values not correct");*/
+			});
+		}
+
+		expect(sellProductError).toThrowError(RangeError, "Object properties values not correct");
 
 		expect(sellProduct(
 			{
