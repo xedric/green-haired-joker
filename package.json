@@ -1,0 +1,26 @@
+{
+  "name": "green-haired-joker",
+  "version": "1.0.0",
+  "description": "A project to test Jest",
+  "main": "index.js",
+  "dependencies": {
+    "jest": "^22.1.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xedric/green-haired-joker.git"
+  },
+  "keywords": [
+    "Jest"
+  ],
+  "author": "Niklas Mårdby",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xedric/green-haired-joker/issues"
+  },
+  "homepage": "https://github.com/xedric/green-haired-joker#readme"
+}
