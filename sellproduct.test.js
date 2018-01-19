@@ -11,12 +11,13 @@ describe('sell product', () => {
 		function sendString() {
 			return sellProduct("test");
 		}
-		expect(sendString()).toThrowError();
+		expect(sendString).toThrowError(TypeError);
 
 		function sendEmptyObj() {
 			return sellProduct({});
 		}
-		expect(sendEmptyObj()).toThrowError(TypeError);
+		expect(sendEmptyObj).toThrowError(TypeError);
+
 	});
 
 	test('One properties missing, two correct property', () => {
@@ -28,7 +29,7 @@ describe('sell product', () => {
 				price: 0
 			})
 		}
-		expect(missingCount()).toThrowError(TypeError);
+		expect(missingCount).toThrowError(TypeError);
 
 		function missingPrice() {
 			return sellProduct(
@@ -37,7 +38,7 @@ describe('sell product', () => {
 				count: 0
 			})
 		}
-		expect(missingPrice()).toThrowError(TypeError);
+		expect(missingPrice).toThrowError(TypeError);
 
 		function missingName() {
 			return sellProduct(
@@ -46,7 +47,7 @@ describe('sell product', () => {
 				count: 0
 			})
 		}
-		expect(missingName()).toThrowError(TypeError);
+		expect(missingName).toThrowError(TypeError);
 
 	});
 
@@ -59,7 +60,7 @@ describe('sell product', () => {
 			})
 		}
 
-		expect(onlyName()).toThrowError(TypeError);
+		expect(onlyName).toThrowError(TypeError);
 
 		function onyPrice() {
 			return sellProduct(
@@ -67,7 +68,7 @@ describe('sell product', () => {
 				price: 0
 			})
 		}
-		expect(onyPrice()).toThrowError(TypeError);
+		expect(onyPrice).toThrowError(TypeError);
 
 		function onyCount() {
 			return sellProduct(
@@ -75,7 +76,7 @@ describe('sell product', () => {
 				count: 0
 			})
 		}
-		expect(onyCount()).toThrowError(TypeError);
+		expect(onyCount).toThrowError(TypeError);
 
 	});
 
