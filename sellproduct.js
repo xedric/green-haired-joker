@@ -14,8 +14,10 @@ function sellProduct(product) {
 	if(typeof product === "object")
 		if(typeof product.name === "string" && typeof product.price === "number" && typeof product.count === "number")
 			if(product.name != "" && product.price != 0 && product.count > 0)
+			{	
 				product.count--;
 				return product;
+			}
 			else
 				throw new RangeError("Object properties values not correct");
 		else
