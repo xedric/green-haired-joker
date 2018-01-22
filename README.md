@@ -11,3 +11,6 @@ A small repo to demo Jest for my students
 Excersises written by David Andersson, [linkedin](https://www.linkedin.com/in/david-andersson-3277252/), [github](https://github.com/lejonmanen)
 
 Code in repo written by Niklas Mårdby, [linkedin](https://www.linkedin.com/in/mardby), [github](https://github.com/xedric)
+
+
+![alt text](https://i.imgur.com/abufWT0.gif "applauding Joker")
