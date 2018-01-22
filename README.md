@@ -4,6 +4,7 @@ A small repo to demo unit testing in JavaScript for my students
 ## Technologies used
 
 * [Jest](https://facebook.github.io/jest/)
+* [Istanbul](https://istanbul.js.org/), which is built into Jest
 
 ## Getting started
 
@@ -12,7 +13,7 @@ A small repo to demo unit testing in JavaScript for my students
 
 ## Code coverage
 
-Jest supports [code coverage](https://en.wikipedia.org/wiki/Code_coverage). Note in [package.json](https://github.com/xedric/green-haired-joker/blob/master/package.json) the lines:
+Jest supports [code coverage](https://en.wikipedia.org/wiki/Code_coverage). Note in [package.json](https://github.com/xedric/green-haired-joker/blob/master/package.json) the line:
 
 ```javascript
 "test": "jest --coverage"
