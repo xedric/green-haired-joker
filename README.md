@@ -3,7 +3,7 @@ A small repo to demo unit testing in JavaScript for my students
 
 ## Technologies used
 
-* [jEST](https://facebook.github.io/jest/)
+* [Jest](https://facebook.github.io/jest/)
 
 # Getting started
 
