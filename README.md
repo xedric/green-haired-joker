@@ -1,7 +1,11 @@
 # green-haired-joker
-A small repo to demo Jest for my students
+A small repo to demo unit testing in JavaScript for my students
 
-## Getting started
+## Technologies used
+
+* [jEST](https://facebook.github.io/jest/)
+
+# Getting started
 
 1. We used [Jests Getting Started](https://facebook.github.io/jest/docs/en/getting-started.html) to setup Jest.
 2. We worked on the excersises from [Övningar enhetstest](https://docs.google.com/document/d/1dfEk85siPS5zaCiuvQKPa5phs6E8M4S8AVuaFWcyJSw/edit#heading=h.e95kwuo4ek8c). Note: excersises in swedish
